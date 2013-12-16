@@ -1,3 +1,11 @@
-def fizzbuzz(num,f=10)
-	(0..num).to_a.map{|n| n%f==0? 'Fizz' : n}
+def fizzbuzz(num,f=3, b=5)
+	(1..num).to_a.map do |n| 
+		if n%f==0
+			'Fizz'
+		elsif n%b==0
+			'Buzz'
+		else
+			n
+		end
+	end
 end
