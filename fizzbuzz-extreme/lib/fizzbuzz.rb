@@ -1,7 +1,7 @@
 def fizzbuzz(num,f=3, b=5)
-	(1..num).to_a.map do |n| 
+	(0..num).to_a.map do |n| 
 		if n%f==0
-			'Fizz'
+			n%b==0 ? 'Fizzbuzz' : 'Fizz'
 		elsif n%b==0
 			'Buzz'
 		else
